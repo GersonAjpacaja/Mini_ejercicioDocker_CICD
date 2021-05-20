@@ -9,7 +9,7 @@ cp -r templates/* tempodir/templates/.
 cp -r static/* tempodir/static/.
 
 echo "FROM python" >> tempodir/Dockerfile
-echo "RUN pip install flask" >> tempodir/Dockerfile
+echo "RUN pip install flask" >> tempodir/
 echo "COPY ./static /home/myapp/static/" >> tempodir/Dockerfile
 echo "COPY ./templates /home/myapp/templates/" >> tempodir/Dockerfile
 echo "COPY app.py /home/myapp/" >> tempodir/Dockerfile
